@@ -65,6 +65,7 @@ func buildAllowOrigins() []string {
 	// and add the values into the allowOrigins slice
 	allowOrigins = append(allowOrigins, corsConfig.Google)
 	allowOrigins = append(allowOrigins, corsConfig.Facebook)
+	allowOrigins = append(allowOrigins, corsConfig.Client)
 
 	return allowOrigins
 }

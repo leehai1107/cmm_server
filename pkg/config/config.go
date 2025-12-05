@@ -42,6 +42,7 @@ type ServicesCfg struct{}
 type CorsCfg struct {
 	Google   string `envconfig:"GOOGLE" default:"https://www.google.com/"`
 	Facebook string `envconfig:"FACEBOOK" default:"https://www.facebook.com/"`
+	Client   string `envconfig:"CLIENT" default:"http://localhost:5173/"`
 }
 
 func InitConfig() {
